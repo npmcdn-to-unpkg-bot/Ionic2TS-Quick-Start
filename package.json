@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Getting started with Ionic 2 using TypeScript",
   "scripts": {
-    "start": "npm run tsc && npm run lite",
+    "start": "npm run tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
     "tsc": "tsc src/system.config.ts",
-    "tsc:w": "tsc -w",
+    "tsc:w": "tsc -w src/system.config.ts",
     "lite": "lite-server -c bsconfig.json",
     "reset": "git reset --hard HEAD && git clean -df",
     "postinstall": "npm run typings -- install",
