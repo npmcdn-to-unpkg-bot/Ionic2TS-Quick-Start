@@ -55,6 +55,11 @@ const config = {
   typescriptOptions: {
     emitDecoratorMetadata: true
   },
+  meta: {
+    'typescript': {
+      'exports': 'ts'
+    }
+  },
   map: map,
   packages: packages
 };

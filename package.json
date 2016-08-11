@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Getting started with Ionic 2 using TypeScript",
   "scripts": {
-    "start": "npm run tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
-    "tsc": "tsc src/system.config.ts",
+    "start": "npm run pug:index && npm run tsc:system && concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "pug:index": "pug src/index.pug",
+    "tsc:system": "tsc src/system.config.ts",
     "tsc:w": "tsc -w src/system.config.ts",
     "lite": "lite-server -c bsconfig.json",
-    "reset": "git reset --hard HEAD && git clean -df",
-    "postinstall": "npm run typings -- install",
-    "typings": "typings"
+    "reset": "git reset --hard HEAD && git clean -df"
   },
   "repository": {
     "type": "git",
@@ -45,6 +44,7 @@
   "devDependencies": {
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.2",
+    "pug-cli": "^1.0.0-alpha6",
     "typescript": "^1.8.10",
     "typings": "^1.3.2"
   }

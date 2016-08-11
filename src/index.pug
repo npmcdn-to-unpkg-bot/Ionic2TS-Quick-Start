@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title Ionic2TS Quick Start
+    meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
+    script(src='https://npmcdn.com/core-js/client/shim.min.js')
+    script(src='https://npmcdn.com/systemjs@0.19.36/dist/system.src.js')
+    script(src='https://npmcdn.com/zone.js@0.6.12?main=browser')
+    script(src='system.config.js')
+    script(src='https://npmcdn.com/ionic-angular@2.0.0-beta.11/bundles/ionic.system.js')
+    link(rel='stylesheet' href='https://npmcdn.com/ionic-angular@2.0.0-beta.11/bundles/ionic.css')
+    script.
+      System.config(config);
+      System.import('app').catch(function(err){console.error(err);});
+  body
+    ion-app Loading...
