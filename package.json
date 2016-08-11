@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Getting started with Ionic 2 using TypeScript",
   "scripts": {
-    "start": "npm run pug:index && npm run tsc:system && concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "start": "npm run pug:index && npm run tsc:system && concurrently \"npm run tsc:w\" \"npm run serve\"",
     "pug:index": "pug src/index.pug",
     "tsc:system": "tsc src/system.config.ts",
     "tsc:w": "tsc -w src/system.config.ts",
-    "lite": "lite-server -c bsconfig.json",
+    "serve": "lite-server -c bsconfig.json",
     "reset": "git reset --hard HEAD && git clean -df"
   },
   "repository": {
@@ -25,21 +25,6 @@
   },
   "homepage": "https://github.com/Shyam-Chen/Ionic2TS-Quick-Start#readme",
   "dependencies": {
-    "@angular/common": "2.0.0-rc.4",
-    "@angular/compiler": "2.0.0-rc.4",
-    "@angular/core": "2.0.0-rc.4",
-    "@angular/forms": "0.2.0",
-    "@angular/http": "2.0.0-rc.4",
-    "@angular/platform-browser": "2.0.0-rc.4",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
-    "@angular/router": "3.0.0-beta.2",
-    "@angular/upgrade": "2.0.0-rc.4",
-    "angular2-in-memory-web-api": "0.0.14",
-    "core-js": "^2.4.1",
-    "ionic-angular": "^2.0.0-beta.11",
-    "rxjs": "5.0.0-beta.6",
-    "systemjs": "^0.19.36",
-    "zone.js": "0.6.12"
   },
   "devDependencies": {
     "concurrently": "^2.2.0",
