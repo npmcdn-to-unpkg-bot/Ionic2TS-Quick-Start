@@ -1,7 +1,7 @@
 const ngVer: string = '@2.0.0-rc.4';
 const formsVer: string = '@0.2.0';
 
-const map = {
+const map: any = {
   'app': 'app',
   '@angular': 'https://npmcdn.com/@angular',
   '@angular/forms': `https://npmcdn.com/@angular/forms${formsVer}`,
@@ -50,7 +50,7 @@ packages['@angular/forms'] = {
   defaultExtension: 'js'
 };
 
-const config = {
+const config: any = {
   transpiler: 'typescript',
   typescriptOptions: {
     emitDecoratorMetadata: true
