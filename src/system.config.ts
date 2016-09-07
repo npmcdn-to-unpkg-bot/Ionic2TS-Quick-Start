@@ -63,3 +63,7 @@ const config: any = {
   map: map,
   packages: packages
 };
+
+declare const System: any;
+
+System.config(config);
