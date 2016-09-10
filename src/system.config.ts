@@ -3,11 +3,11 @@ const formsVer: string = '@0.2.0';
 
 const map: any = {
   'app': 'app',
-  '@angular': 'https://npmcdn.com/@angular',
-  '@angular/forms': `https://npmcdn.com/@angular/forms${formsVer}`,
-  'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api',
-  'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6',
-  'typescript': 'https://npmcdn.com/typescript@1.8.10/lib/typescript.js'
+  '@angular': 'https://unpkg.com/@angular',
+  '@angular/forms': `https://unpkg.com/@angular/forms${formsVer}`,
+  'angular2-in-memory-web-api': 'https://unpkg.com/angular2-in-memory-web-api',
+  'rxjs': 'https://unpkg.com/rxjs@5.0.0-beta.6',
+  'typescript': 'https://unpkg.com/typescript@1.8.10/lib/typescript.js'
 };
 
 const packages: any = {
@@ -35,7 +35,7 @@ const ngPackageNames: string[] = [
 ];
 
 ngPackageNames.forEach((pkgName: any) => {
-  map[`@angular/${pkgName}`] = `https://npmcdn.com/@angular/${pkgName}${ngVer}`;
+  map[`@angular/${pkgName}`] = `https://unpkg.com/@angular/${pkgName}${ngVer}`;
 });
 
 ngPackageNames.forEach((pkgName: any) => {
